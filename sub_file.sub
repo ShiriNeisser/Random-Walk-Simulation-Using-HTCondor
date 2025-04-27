@@ -1,0 +1,10 @@
+universe = vanilla
+executable = /home/hpc-user/random_walk_simulation
+arguments = $(Process) output_$(Process).txt
+log = /home/hpc-user/logs/simulation.log
+output = /home/hpc-user/out/output_$(Process).txt
+error = /home/hpc-user/err/error_$(Process).txt
+should_transfer_files = IF_NEEDED
+when_to_transfer_output = ON_EXIT
+queue 50
+
